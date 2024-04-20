@@ -20,8 +20,9 @@
     }
     iframe {
       position: absolute;
-      bottom: 0%;
+      top: 100%;
       transform: translateY(-100%);
+      clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
       left: 0;
       width: 100vw;
       height: 200vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
