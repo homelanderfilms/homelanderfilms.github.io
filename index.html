@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  
+  
+<meta charset="UTF-8">
+  
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homelander Films</title>
   <style>
-    video[src^="blob:"] {
-      transform: scale(0.75) translate(-20%, -10%); /* Примерные значения */
-      width: 100%;
+ 
+
+    body, html {
+      margin: 0;
+      padding: 0;
       height: 100%;
     }
+    body {
+      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
+    }
     .container {
-      width: 800px;  /* Ширина контейнера */
-      height: 450px; /* Высота контейнера */
-      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden; /* Обрезка контента */
+    }
+    iframe {
+      position: relative;
+      top: -50vh; /* Сдвигаем плеер вверх, чтобы он был виден в верхней части экрана */
+      left: 0;
+      width: 100vw;
+      height: 200vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
   </style>
+
+</hea
 </head>
 <body>
-  <div class="container">
-    <!-- Здесь будет загружен сайт с плеером -->
-    <video preload="none" crossorigin="anonymous" src="blob:https://aquarius.as.newplayjj.com:9443/ab2cdca0-f869-4506-bb67-79d1536370f4">
-    </video>
-  </div>
+  
+ 
+<div class="container">
+    <iframe id="filmFrame" allowfullscreen src="https://pirat.one/t/301077/"></iframe>
+  
+  </div
+</div>
 </body>
 </html>
