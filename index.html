@@ -2,73 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
- 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homelander Films</title>
-  
- 
-<style>
-    /* Стили для обрезк
-
-    /* Стили для 
-
-    /* С
-
-    /* Стили для обрезки части ниже плеера */
+  <style>
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%; /* Устанавливаем высоту 100% для того, чтобы контейнер занимал всю доступную область экрана */
+      height: 100%;
     }
     body {
-      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки страницы */
+      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
     }
     .container {
-      width: 100vw; /* Ширина контейнера равна ширине видимой области экрана */
-      height: 80vh; /* Устанавливаем высоту контейнера до 80% высоты видимой области экрана */
-      overflow: hidden; /* Обрезка контента, который выходит за пределы контейнера */
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden; /* Обрезка контента */
     }
     iframe {
-      position: relative; /* Устанавливаем позиционирование элемента как относительное, чтобы учесть смещение */
-      top: -20vh; /* Сдвигаем плеер вверх на 20% высоты видимой области экрана */
+      position: relative;
+      top: -50vh; /* Сдвигаем плеер вверх, чтобы он был виден в верхней части экрана */
       left: 0;
-      width: 100vw; /* Ширина плеера равна ширине видимой области экрана */
-      height: 120vh; /* Увеличиваем высоту плеера до 120% высоты видимой области экрана, чтобы он вышел за пределы экрана вниз */
-      border: none; /* Убираем границы у плеера */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для эффекта плавности */
+      width: 100vw;
+      height: 200vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
   </style>
-
-<
 </head>
 <body>
-  <!-- Контейнер для плеера с фильмом -->
   <div class="container">
-    <!-- Плеер с фильмом -->
-    <iframe id="filmFrame" allowfullscreen></iframe>
+    <iframe id="filmFrame" allowfullscreen src="https://pirat.one/t/301077/"></iframe>
   </div>
-
-  
-
- 
-<script>
-    // JavaScript для загрузки фильма в плеер после загрузки страницы
-    window.onload = function() {
-      var iframe = document.getElementById("filmFr
-
-    // JavaScript для загрузки фильма в плеер после загрузки страницы
-    window.onload = function() {
-      var iframe = document.getElementById("filmFrame");
-      iframe.src = "htt
-
-    // JavaScript для загрузки фильма в плеер после загрузки страницы
-    window.onload = function() {
-      var iframe = document.getElementById("filmFrame");
-      iframe.src = "https://pirat.one/t/301077/"; /* Замените эту ссылку на ссылку на ваш фильм */
-    };
-  </script>
 </body>
-
-</html
 </html>
