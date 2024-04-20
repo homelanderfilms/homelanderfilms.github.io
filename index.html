@@ -28,8 +28,21 @@
     window.onload = function() {
       var iframeContainer = document.getElementById("iframeContainer");
       var iframe = document.createElement("iframe");
+
       iframe.src = "https://pirat.one/t/301077/";
       iframe.setAttribute("allowfullscreen", "");
+
+      iframe.onload = function() {
+        // Устанавливаем флаг загрузки
+        iframeLoaded = true;
+      };
+
+      // Обработка ошибок загрузки
+      iframe.onerror = function() {
+        console.error("Произошла ошибка при загрузке фильма.");
+      };
+
+      // Загрузка фрейма в контейнер
       iframeContainer.appendChild(iframe);
     };
   </script>
