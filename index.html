@@ -9,7 +9,9 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* Отключение скроллинга страницы */
+    }
+    body {
+      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
     }
     .container {
       width: 100vw;
@@ -18,8 +20,8 @@
     }
     iframe {
       position: absolute;
-      top: 50%; /* Располагаем верхнюю границу плеера в середине экрана */
-      transform: translateY(-50%);
+      top: 100%;
+      transform: translateY(-100%);
       left: 0;
       width: 100vw;
       height: 200vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
@@ -28,10 +30,11 @@
     }
   </style>
 </head>
-<body style="overflow: hidden;">
+<body>
   <div class="container">
     <iframe id="filmFrame" allowfullscreen src="https://pirat.one/t/301077/"></iframe>
   </div>
 </body>
 </html>
+
 
