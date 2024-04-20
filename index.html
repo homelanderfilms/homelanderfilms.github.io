@@ -17,15 +17,15 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden; /* Обрезка контента */
-      position: relative; /* Позиционируем контейнер относительно viewport */
+      position: relative;
     }
     iframe {
-      position: absolute; /* Абсолютное позиционирование для плеера */
-      top: -16.5vh; /* Обрезаем верхнюю часть сайта */
-      bottom: 0vh; /* Обрезаем нижнюю часть сайта */
-      left: 0;
-      width: 100vw;
-      height: 133vh; /* Увеличиваем высоту плеера, чтобы он занимал большую часть экрана */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80vw;
+      height: 80vh; /* Высоту плеера можно уменьшить или увеличить по вашему усмотрению */
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
