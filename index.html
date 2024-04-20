@@ -2,37 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
-  <
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-<title>Homelander Films</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homelander Films</title>
   <style>
-  
-
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
-    }
-    body {
-      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
+      overflow: hidden;
     }
     .container {
-      position: fixed;
-      top: 0;
-      left: 0;
       width: 100vw;
       height: 100vh;
-      overflow: hidden; /* Обрезка контента */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -46,14 +34,8 @@
   <script>
     window.onload = function() {
       var iframe = document.getElementById("filmFrame");
-      iframe.src = "https://p
-
-    window.onload = function() {
-      var iframe = document.getElementById("filmFrame");
       iframe.src = "https://pirat.one/t/301077/";
     };
   </script>
-
-</bo
 </body>
 </html>
