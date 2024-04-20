@@ -9,11 +9,11 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* Скрытие горизонтальной прокрутки */
     }
     .container {
-      width: 100vw; /* Ширина контейнера равна ширине экрана */
+      width: 100vw;
       height: 100vh;
+      overflow: hidden; /* Скрытие контента, выходящего за пределы контейнера */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,10 +33,8 @@
   </div>
 
   <script>
-    // При загрузке страницы изменяем URL iframe
     window.onload = function() {
       var iframe = document.getElementById("filmFrame");
-      // Замените URL ниже на URL вашего фильма
       iframe.src = "https://pirat.one/t/301077/";
     };
   </script>
