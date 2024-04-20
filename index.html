@@ -17,15 +17,14 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden; /* Обрезка контента */
-      position: relative;
     }
     iframe {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80vw;
-      height: 80vh; /* Высоту плеера можно уменьшить или увеличить по вашему усмотрению */
+      top: -16.5vh; /* Сдвигаем плеер вверх, чтобы он был виден в верхней части экрана */
+      bottom: 30vh
+      left: 0;
+      width: 100vw;
+      height: 200vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
