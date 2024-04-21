@@ -1,3 +1,6 @@
+Вот исправленный код с добавленными стилями для iOS и Android устройств:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +32,24 @@
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+    /* Стили для iOS устройств */
+    @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 70%; 
+        transform: translateY(-55%); 
+        height: 350vh; 
+      }
+    }
+
+    /* Стили для Android устройств */
+    @media only screen and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 70%; 
+        transform: translateY(-55%); 
+        height: 350vh; 
+      }
+    }
   </style>
 </head>
 <body>
@@ -37,3 +58,6 @@
   </div>
 </body>
 </html>
+```
+
+Теперь стили для iOS и Android устройств добавлены корректно.
