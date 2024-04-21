@@ -48,6 +48,13 @@
       width: 80%; /* 80% от ширины окна просмотра */
       border-radius: 20px; /* Закругленные углы */
       text-align: center; /* Выравнивание содержимого по центру */
+      position: relative;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      animation: fadeIn 2.6s ease;
     }
     .close {
       color: #aaa;
@@ -61,6 +68,14 @@
       text-decoration: none;
       cursor: pointer;
     }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 <body>
@@ -73,7 +88,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <a href="https://1wmnt.com/v3/aggressive-casino#9ke4" target="_blank">
-        <img src="https://i.imgur.com/mPPKyDp.jpeg" alt="Homelander Films" style="width: 100%; height: auto; border-radius: 20px;">
+        <img src="https://i.imgur.com/mPPKyDp.jpeg" alt="Homelander Films">
       </a>
     </div>
   </div>
