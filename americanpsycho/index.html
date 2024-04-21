@@ -48,6 +48,24 @@
         height: 350vh; 
       }
     }
+
+    /* Стили для разрешения 1920x1080 */
+    @media screen and (min-width: 1920px) and (min-height: 1080px) {
+      iframe {
+        top: 180%;
+        transform: translateY( -57%);
+        height: 400vh;
+      }
+    }
+
+    /* Стили для разрешения 2560x1440 */
+    @media screen and (min-width: 2560px) and (min-height: 1440px) {
+      iframe {
+        top: 195%;
+        transform: translateY(-65%);
+        height: 400vh; /* настройка для 2к */
+      }
+    }
   </style>
 </head>
 <body>
