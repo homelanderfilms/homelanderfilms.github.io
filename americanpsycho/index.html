@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homelander Films</title>
   <link rel="icon" href="https://i.imgur.com/t8mtGEN.png" type="image/png">
-  <script src="iframeAdjust.js"></script>
   <style>
     body, html {
       margin: 0;
@@ -13,12 +12,12 @@
       height: -15%;
     }
     body {
-      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
+      overflow: hidden; 
     }
     .container {
       width: 100vw;
       height: 100vh;
-      overflow: hidden; /* Обрезка контента */
+      overflow: hidden; 
     }
     iframe {  
       position: absolute;
@@ -46,6 +45,15 @@
         top: 70%; 
         transform: translateY(-55%); 
         height: 350vh; 
+      }
+    }
+
+    /* Дополнительные стили для разрешения 1920x1080 */
+    @media only screen and (min-width: 1920px) and (min-height: 1080px) {
+      iframe {
+        top: 180%; 
+        transform: translateY(-55%);
+        height: 400vh;
       }
     }
   </style>
