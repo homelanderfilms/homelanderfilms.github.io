@@ -9,10 +9,10 @@
     body, html {
       margin: 0;
       padding: 0;
-      height: -15%;
+      height: 100%;
     }
     body {
-      overflow: hidden; 
+      overflow: auto; /* Включаем скроллинг */
     }
     .container {
       width: 100vw;
@@ -20,7 +20,17 @@
       overflow: hidden; 
     }
     iframe {
-      position: absolute; /* Стили для iOS устройств */
+      position: absolute;
+      top: 170%;
+      transform: translateY(-65%);
+      left: 0;
+      width: 100vw;
+      height: 400vh; 
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Стили для iOS устройств */
     @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
       iframe {
         top: 70%; 
@@ -35,12 +45,13 @@
         top: 70%; 
         transform: translateY(-55%); 
         height: 350vh; 
-
+      }
+    }
 
     /* Дополнительные стили для разрешения 1980x1080 */
     @media screen and (min-width: 1920px) and (min-height: 1080px) {
       iframe {
-        top: 100%; 
+        top: 200%; 
         transform: translateY(-65%);
         height: 400vh; 
       }
@@ -49,9 +60,9 @@
     /* Дополнительные стили для разрешения 2560x1080 */
     @media screen and (min-width: 2560px) and (min-height: 1080px) {
       iframe {
-        top: 189%; 
+        top: 160%; 
         transform: translateY(-65%);
-        height: 400vh; 
+        height: 450vh; 
       }
     }
   </style>
