@@ -9,7 +9,7 @@
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%;
+      height: -15%;
     }
     body {
       overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
@@ -21,10 +21,11 @@
     }
     iframe {
       position: absolute;
-      top: 0;
+      top: 189%;
+      transform: translateY(-65%);
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 390vh%;
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -38,13 +39,17 @@
   <script>
     // Функция для определения языка пользователя
     function detectLanguage() {
-      // Получаем язык браузера пользователя
-      var userLang = navigator.language || navigator.userLanguage;
-
-      // Проверяем язык браузера
-      // Если язык пользователя не русский, меняем язык страницы на английский
-      if (userLang !== 'ru' && userLang !== 'ru-RU') {
-        document.documentElement.lang = 'en';
+      const userAgent = navigator.userAgent;
+      const englishSpeakingIndicators = [
+        'en-US', 'en-GB', 'en-CA', 'en-AU', 'en-NZ', 'en-IE', // Англоязычные страны
+        'de', 'fr', 'es', 'it', 'nl', 'pt', // Некоторые страны Европы и Латинской Америки
+      ];
+      
+      for (const indicator of englishSpeakingIndicators) {
+        if (userAgent.includes(indicator)) {
+          window.location.replace("/en/"); // Замените '/en/' на путь к вашей английской версии сайта
+          return;
+        }
       }
     }
 
