@@ -12,12 +12,12 @@
       height: -15%;
     }
     body {
-      overflow: hidden; /* Скрытие горизонтальной и вертикальной прокрутки */
+      overflow: hidden; 
     }
     .container {
       width: 100vw;
       height: 100vh;
-      overflow: hidden; /* Обрезка контента */
+      overflow: hidden; 
     }
     iframe {
       position: absolute;
@@ -25,9 +25,27 @@
       transform: translateY(-65%);
       left: 0;
       width: 100vw;
-      height: 390vh; /* Увеличиваем высоту плеера, чтобы он вышел за пределы экрана вниз */
+      height: 390vh; 
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Стили для iOS устройств */
+    @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 160%; 
+        transform: translateY(-55%); 
+        height: 320vh; 
+      }
+    }
+
+    /* Стили для Android устройств */
+    @media only screen and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 150%; 
+        transform: translateY(-50%); 
+        height: 300vh; 
+      }
     }
   </style>
 </head>
