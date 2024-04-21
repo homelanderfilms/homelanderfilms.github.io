@@ -11,29 +11,35 @@ body {
 
 .container {
     text-align: center;
+    position: relative;
 }
 
 .main-photo {
-    width: 80%;
+    width: 60%;
     max-width: 600px;
     border: 5px solid transparent;
     border-radius: 10px;
     transition: border-color 0.5s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .main-photo:hover {
-    border-color: yellow;
+    border-color: #1e90ff;
 }
 
 .claim-bonus-btn {
     background-color: #1e90ff;
     color: #ffffff;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: 3px solid #1e90ff;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.claim-bonus-btn:hover {
+    background-color: #4169e1;
 }
 
 .claim-bonus-btn:hover {
