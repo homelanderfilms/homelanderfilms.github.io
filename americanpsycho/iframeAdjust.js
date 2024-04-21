@@ -9,7 +9,7 @@ function adjustIframe() {
     iframe.style.transform = "translateY(-65%)";
     iframe.style.height = "400vh";
   } else if (width === 1920 && height === 1080) {
-    iframe.style.top = 180%;
+    iframe.style.top = "180%";
     iframe.style.transform = "translateY(-57%)";
     iframe.style.height = "400vh";
   }
