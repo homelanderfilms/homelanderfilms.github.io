@@ -45,6 +45,21 @@
         top: 70%; 
         transform: translateY(-55%); 
         height: 350vh; 
+
+
+    /* Дополнительные стили для разрешения 1980x1080 */
+    @media screen and (min-width: 1920px) and (min-height: 1080px) {
+      iframe {
+        top: 160%; 
+        height: 450vh; 
+      }
+    }
+
+    /* Дополнительные стили для разрешения 2560x1080 */
+    @media screen and (min-width: 2560px) and (min-height: 1080px) {
+      iframe {
+        top: 150%; 
+        height: 480vh; 
       }
     }
   </style>
