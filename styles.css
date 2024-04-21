@@ -14,6 +14,16 @@ body {
     position: relative;
 }
 
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+}
+
 .main-photo {
     width: 60%;
     max-width: 600px;
@@ -36,10 +46,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.claim-bonus-btn:hover {
-    background-color: #4169e1;
+    position: relative; /* Позиционирование кнопки */
+    bottom: 20px; /* Смещение кнопки вниз */
 }
 
 .claim-bonus-btn:hover {
