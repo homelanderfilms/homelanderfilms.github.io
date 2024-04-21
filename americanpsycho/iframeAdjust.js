@@ -1,4 +1,4 @@
-const iframe = document.getElementById("filmFrame");
+const iframe = document.getElementById("iframe");
 
 function adjustIframe() {
   const width = window.innerWidth;
