@@ -20,17 +20,7 @@
       overflow: hidden; 
     }
     iframe {
-      position: absolute;
-      top: 100%;
-      transform: translateY(-65%);
-      left: 0;
-      width: 100vw;
-      height: 400vh; 
-      border: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Стили для iOS устройств */
+      position: absolute; /* Стили для iOS устройств */
     @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
       iframe {
         top: 70%; 
