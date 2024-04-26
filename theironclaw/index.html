@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homelander Films</title>
+  <link rel="icon" href="https://i.imgur.com/t8mtGEN.png" type="image/png">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: -15%;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden; /* Обрезка контента */
+    }
+    iframe {  
+      position: absolute;
+      top: 195%;
+      transform: translateY(-65%);
+      left: 0;
+      width: 100vw;
+      height: 400vh; /* настройка 2к*/
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Стили для iOS устройств */
+    @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 70%; 
+        transform: translateY(-55%); 
+        height: 350vh; 
+      }
+    }
+
+    /* Стили для Android устройств */
+    @media only screen and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      iframe {
+        top: 70%; 
+        transform: translateY(-55%); 
+        height: 350vh; 
+      }
+    }
+
+    /* Дополнительные стили для разрешения 1920x1080 */
+    @media only screen and (min-width: 1920px) and (min-height: 1080px) {
+      body {
+        overflow: auto; /* Разрешаем прокрутку страницы */
+      }
+      iframe {
+        top: 180%; /* Значение для 1920x1080 */
+        transform: translateY(-55%);
+        height: 400vh; /* Значение для 1920x1080 */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe id="filmFrame" allowfullscreen src="https://pirat.one/t/398232"></iframe>
+  </div>
+</body>
+</html>
